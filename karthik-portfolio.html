@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Karthik Durairaj | Project Manager & PMO</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#102030;--mute:#5b6b7a;--line:#dbe2e8;--acc:#0b7f86;--acc2:#c9791a;--soft:#e3f2f2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a25;--card:#152331;--ink:#e8eef3;--mute:#93a4b3;--line:#263a4c;--acc:#3cc4c9;--acc2:#f0b45a;--soft:#12333a}}
+:root[data-theme="dark"]{--bg:#0f1a25;--card:#152331;--ink:#e8eef3;--mute:#93a4b3;--line:#263a4c;--acc:#3cc4c9;--acc2:#f0b45a;--soft:#12333a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.hero{padding:56px 0 32px}
+h1{font-size:clamp(2.4rem,7vw,4.2rem);font-weight:800;letter-spacing:-.02em}
+.role{font-size:1.15rem;color:var(--acc);font-weight:600;margin:10px 0 14px}
+.lede{max-width:60ch;font-size:1.15rem;color:var(--mute);margin:0}
+.meta{margin-top:14px;color:var(--mute);font-size:.95rem}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:30px 0 8px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.kpi b{display:block;font:800 2rem/1 "Bricolage Grotesque",sans-serif;color:var(--acc)}
+.kpi span{display:block;margin-top:8px;font-size:.92rem;color:var(--mute)}
+section{padding:36px 0 8px}
+h2{font-size:1.7rem;font-weight:700;margin-bottom:6px}
+.sub{color:var(--mute);margin:0 0 20px;max-width:65ch}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px}
+.row{display:grid;grid-template-columns:150px 1fr 90px;gap:12px;align-items:center;padding:8px 0}
+.row .lab{font-size:.92rem;font-weight:600}
+.track{height:14px;background:var(--soft);border-radius:3px;overflow:hidden}
+.fill{height:100%;background:var(--acc);border-radius:3px}
+.fill.b{background:var(--acc2)}
+.row .val{font:700 .95rem "Bricolage Grotesque",sans-serif;text-align:right}
+.note{font-size:.85rem;color:var(--mute);margin:10px 0 0}
+.tabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.tabs button{font:600 .95rem "Source Sans 3",sans-serif;padding:8px 16px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
+.tabs button:focus-visible,summary:focus-visible{outline:3px solid var(--acc2);outline-offset:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;border-top:4px solid var(--acc)}
+.card.ibm{border-top-color:var(--acc2)}
+.card h3{font-size:1.12rem;margin-bottom:4px}
+.tag{font-size:.82rem;color:var(--mute);margin-bottom:10px}
+.card p{margin:0 0 10px;font-size:.96rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:.8rem;font-weight:600;background:var(--soft);color:var(--acc);padding:2px 9px;border-radius:999px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.two ul{margin:0;padding-left:18px}.two li{margin:0 0 8px}
+.tl{border-left:3px solid var(--line);margin:0;padding:0 0 0 18px}
+.tl div{margin-bottom:16px;position:relative}
+.tl div:before{content:"";position:absolute;left:-25px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--acc)}
+.tl b{font-family:"Bricolage Grotesque",sans-serif}
+.tl span{display:block;color:var(--mute);font-size:.9rem}
+footer{padding:36px 0 48px;color:var(--mute);font-size:.92rem}
+.bg{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.bg svg{width:100%;height:100%}
+.bg .t{stroke:var(--acc);fill:none}.bg .w{stroke:var(--acc2);fill:none}.bg .d{fill:var(--acc)}.bg .d2{fill:var(--acc2)}
+.call{display:inline-block;margin-top:16px;font-weight:600;background:var(--acc);color:#fff;text-decoration:none;padding:9px 18px;border-radius:999px}
+.call:focus-visible{outline:3px solid var(--acc2);outline-offset:2px}
+@media (prefers-reduced-motion:no-preference){.pulse{stroke-dasharray:16 420;animation:flow 7s linear infinite}.pulse.s{animation-duration:10s}.ring{animation:ring 4s ease-out infinite}@keyframes flow{to{stroke-dashoffset:-436}}@keyframes ring{0%{opacity:.5}100%{opacity:.08}}}
+@media (max-width:560px){.row{grid-template-columns:1fr 70px}.row .track{grid-column:1/3;order:3}}
+@media (prefers-reduced-motion:no-preference){.fill{transition:width .9s ease}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+<defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="var(--line)"/></pattern></defs>
+<rect width="1200" height="800" fill="url(#g)" opacity=".7"/>
+<g class="w" stroke-width="1.6" opacity=".55"><path d="M1050 130 L1020 330 M1050 130 L1080 330 M1030 250 L1070 250 M1036 210 L1064 210 M1024 290 L1076 290 M1020 330 L1080 330"/><circle cx="1050" cy="122" r="7" class="d2" stroke="none"/></g>
+<g class="w" stroke-width="1.4"><path class="ring" d="M1000 90 A70 70 0 0 0 1000 160" opacity=".4"/><path class="ring" d="M1100 90 A70 70 0 0 1 1100 160" opacity=".4"/><path class="ring" d="M975 60 A110 110 0 0 0 975 190" opacity=".3" style="animation-delay:.6s"/><path class="ring" d="M1125 60 A110 110 0 0 1 1125 190" opacity=".3" style="animation-delay:.6s"/><path class="ring" d="M950 30 A150 150 0 0 0 950 220" opacity=".22" style="animation-delay:1.2s"/><path class="ring" d="M1150 30 A150 150 0 0 1 1150 220" opacity=".22" style="animation-delay:1.2s"/></g>
+<g class="w" stroke-width="1.2" opacity=".35" stroke-dasharray="3 7"><path d="M1050 122 L820 300 L560 240 L300 380"/><path d="M820 300 L900 520"/></g>
+<g class="d2" opacity=".5"><circle cx="820" cy="300" r="5"/><circle cx="560" cy="240" r="5"/><circle cx="300" cy="380" r="5"/><circle cx="900" cy="520" r="5"/></g>
+<g class="t" stroke-width="1.5" opacity=".4"><path d="M-20 560 C250 500 400 700 700 640 S1000 560 1250 620"/><path d="M-20 590 C250 530 400 730 700 670 S1000 590 1250 650"/><path d="M-20 620 C250 560 400 760 700 700 S1000 620 1250 680"/><path d="M-20 650 C250 590 400 790 700 730 S1000 650 1250 710"/></g>
+<g class="t" stroke-width="2.6" opacity=".9"><path class="pulse" d="M-20 560 C250 500 400 700 700 640 S1000 560 1250 620"/><path class="pulse s" d="M-20 620 C250 560 400 760 700 700 S1000 620 1250 680"/></g>
+<g class="d" opacity=".55"><circle cx="700" cy="640" r="5"/><circle cx="300" cy="590" r="4"/><circle cx="1000" cy="595" r="4"/></g>
+<g class="t" stroke-width="1.2" opacity=".25"><path d="M-20 240 C120 200 200 330 340 290 S520 160 640 190"/><path d="M-20 270 C120 230 200 360 340 320 S520 190 640 220"/></g>
+</svg></div>
+<div class="wrap">
+<header class="hero">
+<h1>Karthik Durairaj</h1>
+<div class="role">Project Manager &amp; PMO, telecom OSS/BSS and enterprise delivery</div>
+<p class="lede">I run telecom programs where a migration can't fail: 300M+ records moved with zero data loss, 82M+ subscribers shifted to Azure, one BSS platform replacing three legacy systems.</p>
+<div class="meta">Chennai, India · About 4 years in delivery · PMI Generative AI Project Management certified · M.Sc. Quantitative Finance</div>
+<div class="kpis">
+<div class="kpi"><b>300M+</b><span>records migrated across four legacy schemas, zero data loss</span></div>
+<div class="kpi"><b>82M+</b><span>AT&amp;T Mobility subscribers moved to Azure voicemail</span></div>
+<div class="kpi"><b>2M+</b><span>customers on one Csmart 5.0 platform</span></div>
+<div class="kpi"><b>0</b><span>non-conformances closing the CTP SQA audit</span></div>
+<div class="kpi"><b>50%+</b><span>less weekly reconciliation effort with an AI financial tracker</span></div>
+</div>
+</header>
+
+<section>
+<h2>Scale I've delivered against</h2>
+<p class="sub">Bars are on a log scale so 20K accounts and 300M records fit on one chart.</p>
+<div class="panel" id="scale"></div>
+</section>
+
+<section>
+<h2>Flagship projects</h2>
+<p class="sub">Filter by employer. Team sizes are shown where I managed a defined team.</p>
+<div class="tabs" id="tabs">
+<button aria-pressed="true" data-f="all">All</button>
+<button aria-pressed="false" data-f="cov">Covalense</button>
+<button aria-pressed="false" data-f="ibm">IBM / AT&amp;T</button>
+</div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section>
+<h2>Team size on IBM / AT&amp;T programs</h2>
+<p class="sub">People coordinated per project.</p>
+<div class="panel" id="teams"></div>
+<p class="note">Omnibill retirement: 40 IBM and 4 Accenture team members.</p>
+</section>
+
+<section>
+<h2>How I run delivery</h2>
+<div class="two">
+<div class="panel"><h3>Governance</h3><ul>
+<li>Charters, WBS, scope baselines, resource plans and cost estimates for every workstream, with AT&amp;T's formal funding approval secured for each.</li>
+<li>Charters, change requests, BRDs, PRDs, FRDs and SRS traceable across all SDLC phases.</li>
+<li>Requirements-prioritisation workshops that keep sprints tied to business value, risk and technical limits.</li></ul></div>
+<div class="panel"><h3>Reporting and tracking</h3><ul>
+<li>Executive dashboards: RAG status, EVM (CPI/SPI/EAC), milestone trackers and risk logs.</li>
+<li>JIRA discipline the team still runs on: daily standups, velocity monitoring, forecasting, dependency management.</li>
+<li>Issue resolution across IBM, AT&amp;T business and IT, Accenture, Amdocs and TechMahindra.</li></ul></div>
+<div class="panel"><h3>AI in the PMO</h3><ul>
+<li>AI agents connected to JIRA, Outlook and financial data through MCP, producing governance dashboards and EVM reports without manual pulls.</li>
+<li>AI financial tracker: budget actuals, EAC/ETC variance forecasts, auto-generated executive dashboards.</li>
+<li>Generative AI practices applied to shorten planning cycles and automate status reporting.</li></ul></div>
+</div>
+</section>
+
+<section>
+<h2>Career timeline</h2>
+<div class="panel"><div class="tl">
+<div><b>PMO Level I, Covalense Digital Solutions</b><span>Sep 2024 to present · Bengaluru · Telecom OSS/BSS, CRM, iPaaS, BRM, broadband, Fiber FTTX, 5G, Iridium</span></div>
+<div><b>Project Manager, IBM (client: AT&amp;T)</b><span>Mar 2023 to Sep 2024 · Chennai · Wireless, 5G, IoT, billing, rate plans, Azure cloud migration</span></div>
+<div><b>Junior Business Analyst, SPAN Technologies</b><span>Feb 2022 to Feb 2023</span></div>
+</div></div>
+</section>
+
+<section>
+<h2>Domains and methods</h2>
+<div class="panel chips" id="skills"></div>
+</section>
+<footer>Karthik Durairaj · Project Manager &amp; PMO · Chennai, India</footer>
+</div>
+
+<script>
+var scale=[["Omnibill accounts moved",20000,"20K"],["Customers on Csmart 5.0",2000000,"2M+"],["Mobility subscribers to Azure",82000000,"82M+"],["Records migrated",300000000,"300M+"]];
+var mx=Math.log10(3e8)+.3;
+document.getElementById("scale").innerHTML=scale.map(function(s,i){return '<div class="row"><div class="lab">'+s[0]+'</div><div class="track"><div class="fill'+(i==0||i==2?' b':'')+'" style="width:'+(Math.log10(s[1])/mx*100).toFixed(1)+'%"></div></div><div class="val">'+s[2]+'</div></div>'}).join("")+'<p class="note">Amber: IBM / AT&amp;T. Teal: Covalense.</p>';
+var teams=[["Toyota/Lexus touchscreen",12],["CA 530–837 NPA overlay",10],["Virtual Voicemail Azure migration",8],["Rate plan ad hoc testing",6],["Omnibill retirement",44]];
+document.getElementById("teams").innerHTML=teams.map(function(t){return '<div class="row"><div class="lab">'+t[0]+'</div><div class="track"><div class="fill b" style="width:'+(t[1]/44*100).toFixed(1)+'%"></div></div><div class="val">'+t[1]+'</div></div>'}).join("");
+var P=[
+["cov","Symbio SkyHigh BSS Transformation","Covalense · PMO governance","Replaced three legacy BSS systems with one Csmart 5.0 platform for 2M+ customers: multitenant MVNE/MVNO/SP/SPC, CRM/BRM auto-sync, eSIM provisioning, OTP/Captcha. Migrated 300M+ records across four legacy schemas with zero data loss.",["2M+ customers","300M+ records","Zero data loss"]],
+["cov","Csmart 5.0 cutover and go-live","Covalense · Go-live readiness","Owned readiness for 90+ configurable features, including the Ticket Module (audit logs, built-in compliance), Knowledge Base/DMS with version control, and HRCT. Supported MEDION's operator go-live and the 24-month Managed Services contract after it.",["90+ features","24-month managed services"]],
+["cov","Four concurrent telecom platforms","Covalense · Delivery lead","Ran CRM, iPaaS, BRM and Symbio-Medion OSS/BSS together: subscription management, provisioning, broadband and data plans, under Agile sprints and full regulatory compliance.",["4 platforms","Agile","Regulatory compliance"]],
+["cov","CDM Csmart ERP and Order Management","Covalense · SDLC owner","Owned the SDLC end to end: broadband, Fiber FTTX, 5G support and the Iridium satellite workstream, including sprint planning, risk registers and resourcing.",["Broadband","Fiber FTTX","5G","Iridium"]],
+["cov","SBD to Iridium Messaging Transport","Covalense · Platform migration","Governed the move from legacy SBD to IMT, coordinating vendor integration for higher-throughput satellite IoT messaging with no service disruption.",["Satellite IoT","No downtime"]],
+["cov","AI-driven financial tracker","Covalense · PMO tooling","Monitors budget actuals, forecasts EAC/ETC variance and auto-generates executive PMO dashboards. Cut weekly reconciliation effort by over 50%.",["50%+ effort saved","EAC/ETC","Executive dashboards"]],
+["cov","Csmart Agentic BSS Overlay","Covalense · Flagship","Goal: tenants live in minutes, eSIM activation automated through QR, prepaid and postpaid migration, real-time invoicing.",["Agentic BSS","eSIM via QR","Real-time invoicing"]],
+["cov","Csmart Satellite Solution","Covalense · Flagship","Telecom offer sentiment and segmentation analysis, with Customer 360 agents for product sales, ticketing and care, finance, and networks.",["Customer 360","Segmentation","AI agents"]],
+["ibm","Virtual Voicemail Azure Migration (MVM)","IBM / AT&T · Team of 8","Led migration of 82M+ AT&T Mobility subscribers from Nokia's legacy CMS to Metaswitch's geo-redundant voicemail on Microsoft Azure.",["82M+ subscribers","Azure","Team: 8"]],
+["ibm","Omnibill Retirement and Azure Migration","IBM / AT&T · Billing","Governed the transition of 20K ACC business accounts from legacy Omnibill to Azure: MPLS networking (AT&T VPN, High IP Flex Net), invoice generation and Ethernet switch retirement, across IBM (40) and Accenture (4).",["20K accounts","Team: 44","Azure"]],
+["ibm","CA 530–837 NPA Overlay","IBM / AT&T · CPUC compliance","Managed DB-level NPA, point code, LATA and CLLI updates for California's CPUC-mandated area code overlay. Full regulatory compliance achieved.",["CPUC","Full compliance","Team: 10"]],
+["ibm","Toyota/Lexus 7-Inch Touchscreen Integration","IBM / AT&T · IoT","Managed AT&T's rate plan upgrade and GPS navigation integration through a full end-to-end testing cycle.",["Rate plans","GPS","Team: 12"]],
+["ibm","Mobility Rate Plan Ad Hoc Testing","IBM / AT&T · Tech Enablement","Managed end-to-end testing for rate plan revenue protection: price changes, plan migrations, rebranding and legal compliance.",["Revenue protection","Team: 6"]],
+["ibm","Cloud Optimization Program (CTP)","IBM / AT&T · Quality","Led the SQA audit for a complex cloud optimization program and closed it with zero non-conformances.",["SQA audit","Zero non-conformances"]]
+];
+var grid=document.getElementById("grid");
+function draw(f){grid.innerHTML=P.filter(function(p){return f=="all"||p[0]==f}).map(function(p){return '<article class="card '+p[0]+'"><h3>'+p[1]+'</h3><div class="tag">'+p[2]+'</div><p>'+p[3]+'</p><div class="chips">'+p[4].map(function(c){return '<span class="chip">'+c+'</span>'}).join("")+'</div></article>'}).join("")}
+draw("all");
+document.getElementById("tabs").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;this.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});draw(b.dataset.f)});
+document.getElementById("skills").innerHTML=["Telecom OSS/BSS","CRM","iPaaS","BRM","5G","IoT","Broadband","Fiber FTTX","Iridium satellite","Azure cloud migration","Agile","SAFe","JIRA","EVM (CPI/SPI/EAC)","Risk management","SQA audits","MCP and AI agents","Generative AI for PMO","Vendor management","Regulatory compliance"].map(function(s){return '<span class="chip">'+s+'</span>'}).join("");
+</script>
+</body>
+</html>
